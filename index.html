@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>🐶 Free TikTok Hashtag Tool for Pet Lovers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { 
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; 
+      padding: 20px; 
+      max-width: 800px; 
+      margin: auto; 
+      background: #fffaf5; 
+      color: #333; 
+      line-height: 1.6;
+    }
+    h1 { color: #e74c3c; text-align: center; }
+    button { 
+      background: #e74c3c; 
+      color: white; 
+      padding: 12px 24px; 
+      border: none; 
+      border-radius: 8px; 
+      cursor: pointer; 
+      font-size: 16px; 
+      margin: 10px 0; 
+      display: block;
+    }
+    button:hover { background: #c0392b; }
+    .section { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin: 20px 0; }
+    small { display: block; text-align: center; margin-top: 40px; color: #777; }
+  </style>
+</head>
+<body>
+  <h1>🐶 Free TikTok Hashtag Generator for Pet Accounts</h1>
+  <p style="text-align:center">No signup. No email. Just copy, paste, and grow 🚀</p>
+
+  <div class="section">
+    <h3>👉 For Funny Dog Videos</h3>
+    <p id="dog-funny">#DogTok #FunnyDogs #ViralPets #CutePuppy #DogLover #PetComedy #DogVideos #FYP #FYPシ #DogOfTikTok</p>
+    <button onclick="copyToClipboard('dog-funny')">📋 COPY HASHTAGS</button>
+  </div>
+
+  <div class="section">
+    <h3>👉 For Sleeping Cat Videos</h3>
+    <p id="cat-sleeping">#CatTok #SleepingCat #CatLover #RelaxingCats #CatVideos #FYP #CatOfTikTok #CuteCat #CatLife #CatNap</p>
+    <button onclick="copyToClipboard('cat-sleeping')">📋 COPY HASHTAGS</button>
+  </div>
+
+  <script>
+    function copyToClipboard(id) {
+      const el = document.getElementById(id);
+      const temp = document.createElement('textarea');
+      temp.value = el.innerText;
+      document.body.appendChild(temp);
+      temp.select();
+      document.execCommand('copy');
+      document.body.removeChild(temp);
+      alert('✅ Copied! Paste this in your TikTok caption. Good luck! 🐾');
+    }
+  </script>
+
+  <small>
+    ❤️ Made with love by a fellow pet parent.<br>
+    ☕️ If this helped you, <a href="https://www.buymeacoffee.com/yourname" style="color:#e74c3c">buy me a coffee?</a><br>
+    🛒 I use <a href="#" style="color:#e74c3c">this ring light</a> for bright pet videos.<br>
+    🎨 Design faster with <a href="#" style="color:#e74c3c">Canva</a>.
+  </small>
+</body>
+</html>
